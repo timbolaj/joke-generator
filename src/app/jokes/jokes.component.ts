@@ -14,7 +14,7 @@ export class JokesComponent implements OnInit {
   punchLine:String;
 
   ngOnInit(): void {
-    this.getJoke();
+    //this.getJoke();
   }
 
   getJoke():void {
