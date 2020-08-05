@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { updateCount } from '../counter/counter.component';
-import { updateFor } from 'typescript';
-
+import { JokeService } from '../joke.service';
 @Component({
   selector: 'app-jokes',
   templateUrl: './jokes.component.html',
@@ -10,7 +8,7 @@ import { updateFor } from 'typescript';
 })
 export class JokesComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, jokeService: JokeService) { }
 
   jokePrompt:String;
   punchLine:String;
@@ -23,7 +21,6 @@ export class JokesComponent implements OnInit {
     this.http.get<any>('http://www.official-joke-api.appspot.com/random_joke').subscribe(res => {
       this.jokePrompt = res.setup;
       this.punchLine = res.punchline;
-      updateCount();
     })
   }
 
