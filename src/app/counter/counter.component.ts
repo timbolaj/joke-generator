@@ -9,7 +9,14 @@ export class CounterComponent implements OnInit {
 
   constructor() { }
 
+  jokeCount:number = 0;
+
   ngOnInit(): void {
+
+  }
+
+  updateCount(): void {
+    this.jokeCount += 1;
   }
 
 }
