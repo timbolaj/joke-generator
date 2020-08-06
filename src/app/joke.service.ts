@@ -17,6 +17,6 @@ export class JokeService {
   }
 
   getJoke():any {
-    return this.http.get<any>('https://www.official-joke-api.appspot.com/random_joke');
+    return this.http.get<any>('https://official-joke-api.appspot.com/random_joke');
   }
 }
