@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JokeService } from '../joke.service'
 
 @Component({
   selector: 'app-counter',
@@ -8,16 +9,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class CounterComponent implements OnInit {
 
-  constructor() { }
-
-  jokeCount:number = 0;
+  constructor(private jokeService: JokeService) { }
 
   ngOnInit(): void {
 
   }
 
-  updateCount(): void {
-    this.jokeCount += 1;
+  getCount(): number {
+    return this.jokeService.count;
   }
 
 }
