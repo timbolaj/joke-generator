@@ -1,15 +1,23 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class JokeService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   count:number = 0;
+  jokePrompt:String;
+  punchLine:String;
 
   addCount():void {
     this.count += 1;
+  }
+
+  getJoke():any {
+    this.addCount();
+    return this.http.get<any>('http://www.official-joke-api.appspot.com/random_joke');
   }
 }

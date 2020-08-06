@@ -14,23 +14,31 @@ export class JokesComponent implements OnInit {
     private jokeService: JokeService
     ) { }
 
-  jokePrompt:String;
+  prompt:String;
   punchLine:String;
 
   ngOnInit(): void {
 
   }
 
-  getJoke(): void {
-    this.http.get<any>('http://www.official-joke-api.appspot.com/random_joke').subscribe(res => {
-      this.jokePrompt = res.setup;
-      this.punchLine = res.punchline;
-      this.addCount();
-    })
-  }
+  // getJoke(): void {
+  //   this.http.get<any>('http://www.official-joke-api.appspot.com/random_joke').subscribe(res => {
+  //     this.jokePrompt = res.setup;
+  //     this.punchLine = res.punchline;
+  //     this.addCount();
+  //   })
+  // }
 
   addCount(): void {
     this.jokeService.addCount();
+  }
+
+  renderJoke(): void {
+    this.jokeService.getJoke()
+    .subscribe(res => {
+      this.prompt = res.setup;
+      this.punchLine = res.punchline;
+    })
   }
 
 }
