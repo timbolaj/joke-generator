@@ -1,27 +1,18 @@
 # RandomJoke
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+A web app which generates a random joke and keeps track of the amount of times a user has generated a random joke. Built with Angular and the official joke api.
 
-## Development server
+By clicking on the generate button, the app, through an api call, displays for the user a random joke.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Getting Started
 
-## Code scaffolding
+* Fork this repository and clone that forked repository.
+* Install all dependencies
+* Type the command ng server --open
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Final Product
 
-## Build
+# Dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Angular 10.0.6^
+* Bootstrap 4.5.0^
