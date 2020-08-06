@@ -21,14 +21,6 @@ export class JokesComponent implements OnInit {
 
   }
 
-  // getJoke(): void {
-  //   this.http.get<any>('http://www.official-joke-api.appspot.com/random_joke').subscribe(res => {
-  //     this.jokePrompt = res.setup;
-  //     this.punchLine = res.punchline;
-  //     this.addCount();
-  //   })
-  // }
-
   addCount(): void {
     this.jokeService.addCount();
   }
