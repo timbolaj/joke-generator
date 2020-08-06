@@ -11,5 +11,6 @@ export class JokeService {
 
   addCount():void {
     this.count += 1;
+    console.log(this.count);
   }
 }
