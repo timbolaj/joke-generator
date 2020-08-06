@@ -12,6 +12,8 @@ By clicking on the generate button, the app, through an api call, displays for t
 
 # Final Product
 
+!['Final product'](https://github.com/timbolaj/joke-generator/blob/master/documents/Screenshot%20from%202020-08-06%2016-42-10.png?raw=true)
+
 # Dependencies
 
 * Angular 10.0.6^
