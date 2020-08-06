@@ -15,7 +15,10 @@ export class CounterComponent implements OnInit {
 
   }
 
+  times:string
+
   getCount(): number {
+    this.jokeService.count === 1 ? this.times = 'time' : this.times = 'times';
     return this.jokeService.count;
   }
 

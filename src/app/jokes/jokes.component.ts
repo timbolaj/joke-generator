@@ -30,6 +30,7 @@ export class JokesComponent implements OnInit {
     .subscribe(res => {
       this.prompt = res.setup;
       this.punchLine = res.punchline;
+      this.addCount();
     })
   }
 
