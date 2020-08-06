@@ -12,6 +12,8 @@ By clicking on the generate button, the app, through an api call, displays for t
 
 # Final Product
 
+Interact with the final product here: https://timbolaj.github.io/joke-generator/
+
 !['Final product'](https://github.com/timbolaj/joke-generator/blob/master/documents/Screenshot%20from%202020-08-06%2016-42-10.png?raw=true)
 
 # Dependencies
